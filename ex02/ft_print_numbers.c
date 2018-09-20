@@ -6,7 +6,7 @@
 /*   By: seli <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/20 02:07:41 by seli              #+#    #+#             */
-/*   Updated: 2018/09/20 02:11:19 by seli             ###   ########.fr       */
+/*   Updated: 2018/09/20 02:26:34 by seli             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,6 @@ void	ft_print_numbers(void)
 	char digit;
 
 	digit = '0';
-	while (digit <='9')
+	while (digit <= '9')
 		ft_putchar(digit++);
 }
