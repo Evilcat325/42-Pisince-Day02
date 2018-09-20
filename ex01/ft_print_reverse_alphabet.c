@@ -6,11 +6,11 @@
 /*   By: seli <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/20 00:12:12 by seli              #+#    #+#             */
-/*   Updated: 2018/09/20 02:03:56 by seli             ###   ########.fr       */
+/*   Updated: 2018/09/20 02:05:57 by seli             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(void);
+void	ft_putchar(char c);
 
 void	ft_print_reverse_alphabet(void)
 {
