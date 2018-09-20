@@ -6,7 +6,7 @@
 /*   By: seli <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/20 03:54:54 by seli              #+#    #+#             */
-/*   Updated: 2018/09/20 05:20:39 by seli             ###   ########.fr       */
+/*   Updated: 2018/09/20 05:23:04 by seli             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,7 @@ void	ft_print_combn_recursive(int n, int min)
 				return ;
 			ft_putchar(',');
 			ft_putchar(' ');
+			min++;
 		}
 		return ;
 	}
@@ -58,7 +59,6 @@ void	ft_print_combn_recursive(int n, int min)
 	while (cur_min + n <= 10)
 	{
 		g_prev[g_max - n] = cur_min;
-		ft_print_combn_recursive(n - 1, cur_min + 1);
-		cur_min++;
+		ft_print_combn_recursive(n - 1, ++cur_min);
 	}
 }
