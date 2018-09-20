@@ -6,7 +6,7 @@
 /*   By: seli <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/20 03:54:54 by seli              #+#    #+#             */
-/*   Updated: 2018/09/20 05:00:56 by seli             ###   ########.fr       */
+/*   Updated: 2018/09/20 05:01:51 by seli             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ void	ft_print_combn_recursive(int n, int min)
 	{
 		ft_print_prev();
 		ft_putchar(min + '0');
-		if (prev[0] == 10 - g_max)
+		if (g_prev[0] == 10 - g_max)
 			return ;
 		ft_putchar(',');
 		ft_putchar(' ');
