@@ -6,7 +6,7 @@
 /*   By: seli <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/20 03:27:50 by seli              #+#    #+#             */
-/*   Updated: 2018/09/20 03:51:09 by seli             ###   ########.fr       */
+/*   Updated: 2018/09/20 03:53:51 by seli             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_putnbr(int nb)
 	long	divisor;
 	int		c;
 
-	if (nb <= 0)
+	if (nb < 0)
 		ft_putchar('-');
 	divisor = 10000000000;
 	while (nb > divisor)
@@ -33,5 +33,8 @@ void	ft_putnbr(int nb)
 			ft_putchar(c + '0');
 		divisor /= 10;
 	}
-	ft_putchar(nb % 10 + '0');
+	c = nb % 10;
+	if (c < 0)
+		c = -c;
+	ft_putchar(c + '0');
 }
