@@ -6,7 +6,7 @@
 /*   By: seli <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/20 02:12:34 by seli              #+#    #+#             */
-/*   Updated: 2018/09/20 03:01:49 by seli             ###   ########.fr       */
+/*   Updated: 2018/09/20 03:04:21 by seli             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,10 @@ void	ft_print_comb(void)
 			third = second + 1;
 			while (third <= '9')
 			{
-				if (first != '7' && second != '8' && third != '9')
-					ft_print(first, second, third, 0);
-				else
+				if (first == '7' && second == '8' && third == '9')
 					ft_print(first, second, third, 1);
+				else
+					ft_print(first, second, third, 0);
 				third++;
 			}
 			second++;
