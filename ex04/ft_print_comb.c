@@ -6,7 +6,7 @@
 /*   By: seli <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/20 02:12:34 by seli              #+#    #+#             */
-/*   Updated: 2018/09/20 02:34:53 by seli             ###   ########.fr       */
+/*   Updated: 2018/09/20 02:51:34 by seli             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,25 +18,33 @@ void	ft_print_comb(void)
 	char second;
 	char third;
 
-	first = '0';
-	second = '1';
-	third = '2';
-	while (first <= '7')
+	first = '0' - 1;
+	while (++first <= '7')
 	{
+		second = first + 1;
+		third = second + 1;
 		while (second <= '8')
 		{
 			while (third <= '9')
 			{
-				ft_putchar(first);
-				ft_putchar(second);
-				ft_putchar(third);
-				third++;
+				if (first != '7' && second != '8' && third != '9')
+					ft_print(first, second, third, false);
+				else
+					ft_print(first, second, third, true);
 			}
-			second++;
-			third = second + 1;
+			third = ++second + 1;
 		}
-		first++;
-		second = first + 1;
-		third = second + 1;
+	}
+}
+
+void	ft_print(char f, char s, char t, bool end)
+{
+	ft_putchar(f);
+	ft_putchar(s);
+	ft_putchar(t);
+	if (!end)
+	{
+		ft_putchar(',');
+		ft_putchar(' ');
 	}
 }
