@@ -6,11 +6,12 @@
 /*   By: seli <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/20 02:12:34 by seli              #+#    #+#             */
-/*   Updated: 2018/09/20 02:55:53 by seli             ###   ########.fr       */
+/*   Updated: 2018/09/20 02:58:56 by seli             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_putchar(char c);
+void	ft_print(char f, char s, char t, int end);
 
 void	ft_print_comb(void)
 {
