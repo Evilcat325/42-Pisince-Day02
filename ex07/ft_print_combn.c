@@ -6,7 +6,7 @@
 /*   By: seli <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/20 03:54:54 by seli              #+#    #+#             */
-/*   Updated: 2018/09/20 05:01:51 by seli             ###   ########.fr       */
+/*   Updated: 2018/09/20 05:05:08 by seli             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,8 @@ void	ft_print_combn_recursive(int n, int min)
 {
 	int cur_min;
 
+	if (min >= 10)
+		return ;
 	if (n == 1)
 	{
 		ft_print_prev();
