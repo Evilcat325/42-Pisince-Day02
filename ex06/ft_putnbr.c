@@ -6,7 +6,7 @@
 /*   By: seli <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/20 03:27:50 by seli              #+#    #+#             */
-/*   Updated: 2018/09/20 22:18:03 by seli             ###   ########.fr       */
+/*   Updated: 2018/09/20 22:20:32 by seli             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	ft_putnbr(int nb)
 	if (nb < 0)
 		ft_putchar('-');
 	divisor = 1000000000;
-	while (nb < divisor)
+	while (nb / divisor == 0 && divisor != 1)
 	{
 		divisor /= 10;
 	}
